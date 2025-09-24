@@ -12,6 +12,7 @@ import { formatCurrency } from "@/helpers/format-currency";
 
 import { CartContext } from "../context/cart";
 import CartProductItem from "./cart-product-item";
+import FinishOrderDialog from "./finish-order-dialog";
 // import FinishOrderDialog from "./finish-order-dialog";
 
 const CartSheet = () => {
@@ -43,10 +44,10 @@ const CartSheet = () => {
           >
             Finalizar pedido
           </Button>
-          {/* <FinishOrderDialog
+          <FinishOrderDialog
             open={finishOrderDialogIsOpen}
             onOpenChange={setFinishOrderDialogIsOpen}
-          /> */}
+          />
         </div>
       </SheetContent>
     </Sheet>
